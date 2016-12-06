@@ -1,0 +1,24 @@
+.footer {
+	position: fixed;
+	bottom: 0;
+	height: 50px;
+	left: 0;
+	width: 100vw;
+	background-color: #185113;
+
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-around;
+
+	padding: 20px;
+
+	button {
+		border: 1px solid whitesmoke;
+		background-color: transparent;
+		color: whitesmoke;
+		height: 40px;
+		min-width: 100px;
+		margin: 0;
+	}
+}

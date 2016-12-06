@@ -1,0 +1,12 @@
+<div class="menu">
+  <div *ngIf="!menuOpen" (click)="openMenu()" class="menu__button">| | |</div>
+  <button *ngIf="menuOpen" type="button" class="menu__button--close" aria-label="Close" (click)="closeMenu()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <ul class="menu__list" [ngClass]="{'open': menuOpen}">
+    <li><a (click)="goTo('intro')">Start</a></li>
+    <li><a (click)="goTo('offers')">Tilbud</a></li>
+    <li><a (click)="goTo('about')">Om</a></li>
+    <li><a (click)="goTo('publications')">Publikationer</a></li>
+  </ul>
+</div>
